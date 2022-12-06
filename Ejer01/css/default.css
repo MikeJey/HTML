@@ -1,0 +1,237 @@
+/* Elimino el padding y margin que viene por defecto en los navegadores */
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+/*
+Establezco un fondo de pantalla básico, 
+tipo de fuente y un padding por defecto,
+además de el 'text-align' deseado
+*/
+body {
+	background-image: url('../img/bg_lightblue.png');
+	font-family: Verdana;
+	padding: 0px 100px 0 100px;
+	text-align: center;
+}
+
+/*
+Los menús de la receta irán en formato h4,y dicho formato tendrá un 
+background de color #B21E36 con un radio redondeado, además de 
+forzar la letra en mayúscula y establecer un padding respecto al 
+resto de contenido
+*/
+h4 {
+	background-color: #B21E36;
+	border-radius: 8px;
+	color: white;
+	text-align: justify;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 8px 0 8px 8px;
+}
+
+/*
+El texto plano <p> irá justificado.
+*/
+
+p {	
+	text-align: justify;
+	padding: 22px 0 22px 0;
+}
+
+/* 
+La cabecera debe ocupar el 100% de la página (salvo los padding de <body>)
+*/
+
+header {
+	width: 100%;
+	background-color: #B21E36;
+}
+
+/*
+Esto hace referencia al menú de navegación para el 'index2.html'
+en cuyo caso simulo la posibilidad de añadir más recetas y 
+dividirlas en Entrantes, Primeros, Segundos y Postre.
+*/
+
+header nav ul {
+	background-color: #B21E36;
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: 8px;
+}
+
+header nav ul li { 
+	display: inline-block;
+	font-size: 20px;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav ul li:hover {
+	background: teal;
+}
+
+/*
+La barra separadora tendrá un estilo concreto, con el mismo tono de rojo
+que el resto de la página y radio del borde de redondeado.
+*/
+
+/*
+La primera sección tendrá un background que se repetirá en horizontal, dándole
+un efecto a la página.
+*/
+
+section#introduccion-sopacebolla {
+	background-image: url('../img/bg-top.png');
+	background-repeat: repeat-x;
+	background-position: top;
+	padding-top: 65px;
+	padding-bottom: 25px;
+}
+
+/*
+Me interesa que la lista (Historia, Ingredientes y Proceso) se vea en horizontal
+y sin los puntitos.
+*/
+
+section#introduccion-sopacebolla ul {
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;	
+}
+
+section#introduccion-sopacebolla ul li {
+	display: inline-block;
+}
+
+/*
+Con el a:hover consigo darle un color de fondo al enlace, que contrasta con la imagen
+con fondo transparente.
+*/
+
+section#introduccion-sopacebolla ul img:hover {
+	background-color: #B21E36;
+}
+
+/*
+La última sección tendrá otro background similar pero orientado a la parte de abajo.
+*/
+
+section.proceso {
+	background-image: url('../img/bg-bottom.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 65px;
+}
+
+/*
+Por defecto, las listas de la página se alinearán a la izquierda de modo que, junto
+con el 'text-align: center' de <body>, quedarán ordenadas en el centro y con las
+puntuaciones al mismo nivel.
+*/
+
+ul, ol {
+    list-style-position: inside;
+	text-align: left;
+}
+
+/*
+Los puntos y números de las listas estarán en negrita
+*/
+
+ol > li::marker { font-weight: bold; }
+
+/*
+Todas las imágenes, por defecto, tendrán un radio de borde redondeado de 8px
+*/
+
+img { 
+	/*border: 3px solid #258E94;*/
+	border-radius: 8px;
+	padding: 15px;
+}
+
+/*
+Además, la foto del plato irá con un borde en color turquesa con un grosor de 3px
+*/
+
+img.foto-plato {
+	border: 3px solid #258E94;
+	padding: 0;
+}
+
+/*
+Con esto hago un 'resize' de la foto de las 4 personitas para que no quede tan grande
+*/
+
+img.personas {
+	width: 51px;
+	height: 28px;
+}
+
+/*
+Establezco el color rojo en el fondo del footer, así como la fuente, estilo y tamaño
+*/
+
+footer {
+	background-color: #B21E36;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-style: italic;
+	font-size: 12px;
+	color: white; 	
+	width: 100%;
+	font-size: 14px;
+}
+
+/*
+El texto del footer irá alineado al centro y con un padding de 10px
+*/
+
+footer p {
+	text-align: center;
+	padding: 10px;
+}
+
+/*
+Las listas de clase "lista" tendrán un padding de 22px arriba y abajo
+*/
+
+.lista {
+	display: inline-block;
+	text-align: left;
+	padding: 22px 0 22px 0px;
+}
+
+/*
+Las imágenes de clase "menu-fotos" irán sin estilo de lista y alineadas en la misma línea
+*/
+
+.menu-fotos {
+	width: 100%;
+	text-align: center;
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;	
+}
+
+.menu-fotos li {
+	display: inline-block;
+}
+
+.menu-fotos li img {
+	padding: 0;
+	margin: 0 15px 15px 15px;
+	border: 3px solid #B21E36;
+	border-radius: 8px;
+}

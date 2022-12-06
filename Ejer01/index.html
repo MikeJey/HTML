@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Recetario de Rte. Miguelín</title>
+		<!--
+		Enlace a la hoja de estilo de nombre 'default' 
+		(de ahora en adelante no lo volveré a comentar a no ser que cambie en algo relevante)
+		-->
+		<link rel="stylesheet" href="css/default.css" type="text/css"/>
+		<!-- Indico al navegador el tipo de codificación que deseamos. -->
+		<meta charset="UTF-8">
+    </head>
+    <body>
+		<!-- Dentro del body separaré la página en tres puntos:
+		1. Header o cabecera, con el título
+		2. Un div de nombre 'contenedor', que tendrá el contenido
+		3. Footer o pie de página, con información breve
+		-->
+		<header>
+			<a href="index.html"><img src="img/title3.png"/></a>
+		</header>
+		<div id="contenedor">
+			<!-- La receta la separaré en cuatro secciones <section>
+			1. Introducción, con el nombre del plato y el menú del mismo
+			2. Historia sobre la receta
+			3. Ingredientes
+			4. Proceso, la preparación paso a paso
+			-->
+			<section id="introduccion-sopacebolla">
+				<img src="img/sopa-cebolla-menu2.png"/>
+				</br>
+				<img alt="Sopa de cebolla" class="foto-plato" src="img/sopa-cebolla.jpg"/>
+				</br>
+				<img class="personas" src="img/cuatro-personas.png" alt="4 personas" />
+				<br/>
+				<!-- El enlace al contenido lo hago con una etiqueta <a> referenciada -->
+				<ul>
+					<li><a href="#historia-sopacebolla"><img src="img/menu-historia.png" /></a></li>
+					<li><a href="#ingredientes-sopacebolla"><img src="img/menu-ingredientes.png" /></a></li>
+					<li><a href="#proceso-sopacebolla"><img src="img/menu-proceso.png" /></a></li>
+				</ul>			
+			</section>
+			<!-- El siguiente contenido es el primer en estar enlazado al menú -->
+			<a id="historia-sopacebolla">
+				<section class="historia">
+					<h4>Historia</h4>
+					<p>Si por lo general la sopa de cebolla se considera originaria de Francia, la realidad es que se le tiene registro histórico en muchos países europeos. Se tiene conocimiento de recetas de sopa de cebolla desde la Edad Media, igual que la sopa de ajo. En un inicio era considerada como un plato pobre que comían quienes no tenían otra cosa con qué alimentarse. 
+					</br></br>La moda de la sopa de cebolla y su inclusión de lleno en la gastronomía francesa se dio en el siglo XIX cuando se le servía en el mercado parisino de Les Halles a los noctámbulos que regresaban de una noche de fiesta.</br></br>
+					Hoy proponemos la receta tradicional de la sopa de cebolla que preparamos con vino blanco, aunque tenemos otras versiones como la sopa de cebolla dulce con queso Stilton. Algunas personas prefieren usar brandy, jerez o no agregarle ningún ingrediente alcohólico. Sin embargo consideramos que el vino blanco le aporta el mejor sabor una vez servida con el pan tostado y el queso Emmenthal.</p>
+					<ul class="menu-fotos">
+						<li><img src="img/foto-historia1.png" alt="Vitre"/></li>
+						<li><img src="img/foto-historia2.png" alt="Francia en la Edad Media"/></li>
+					</ul>
+				</section>
+			</a>
+			<a id="ingredientes-sopacebolla">
+				<section class="ingredientes">
+					<h4>Ingredientes</h4>		
+					<ul class="lista">
+						<li>1 kg. de cebollas</li>
+						<li>2 l. de caldo de carne</li>
+						<li>100 gr. de mantequilla</li>
+						<li>1 cucharada de harina</li>
+						<li>100 gr. de queso emmental suizo o gruyére rallado</li>
+						<li>Pan tostado a rebanadas</li>
+						<li>Tomillo</li>
+						<li>1 hoja de laurel</li>
+						<li>Pimienta</li>
+					</ul>
+					<ul class="menu-fotos">
+						<li><img src="img/foto-ingredientes1.png" alt="Cebollas"/></li>
+						<li><img src="img/foto-ingredientes2.png" alt="Pan tostado"/></li>
+					</ul>
+					<ul class="menu-fotos">
+						<li><img src="img/foto-ingredientes3.png" alt="Caldo de carne"/></li>
+						<li><img src="img/foto-ingredientes4.png" alt="Mantequilla"/></li>
+						<li><img src="img/foto-ingredientes5.png" alt="Queso emmental"/></li>
+						<li><img src="img/foto-ingredientes6.png" alt="Harina"/></li>
+					</ul>
+				</section>
+				</a>
+				<a id="proceso-sopacebolla">
+					<section class="proceso">
+						<h4>Proceso</h4>
+						<ol class="lista">
+							<li>Pelar y partir las cebollas en rodajas finas.</li>
+							<li>Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.</li>
+							<li>Añadir la harina sin dejar de remover.</li>
+							<li>Ponerlo en la cazuela con el caldo, el tomillo y el laurel.</li>
+							<li>Dejar cocer a fuego lento durante unos 15 minutos.</li>
+							<li>Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</li>
+						</ol>
+						<ul class="menu-fotos">
+							<li><img src="img/foto-proceso1.png" alt="Rehogando la cebolla"/></li>
+							<li><img src="img/foto-proceso2.png" alt="Preparando el plato"/></li>
+						</ul>
+					</section>
+				</a>	
+		</div>
+		<footer>
+			<p>Tarea hecha por <b>Miguel A. Juan</b>, estudiante de 1º de DAW a distancia en CIFP Pau Casesnoves.</p>
+		</footer>
+    </body>
+</html>
